@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+	<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+	<!--[if !IE]><!--> <html lang="pt-BR"> <!--<![endif]-->
+	<!-- BEGIN HEAD -->
+  	<title>Gueime</title>
+  	<%= stylesheet_link_tag "application", :media => "all" %>
+  	<%= csrf_meta_tags %>
+</head>
+<body class="fixed-top">
+
+	<%= yield %>
+
+<%= javascript_include_tag "admin" %>
+
+</body>
+</html>
