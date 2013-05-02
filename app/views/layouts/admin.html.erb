@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-	<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-	<!--[if !IE]><!--> <html lang="pt-BR"> <!--<![endif]-->
-	<!-- BEGIN HEAD -->
-  	<title>Gueime</title>
-  	<%= stylesheet_link_tag "application", :media => "all" %>
-  	<%= csrf_meta_tags %>
+  <title>Gueime</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= csrf_meta_tags %>
 </head>
-<body class="fixed-top">
+<body>
 
 	<%= yield %>
 
 <%= javascript_include_tag "admin" %>
-
+<script>
+	jQuery(document).ready(function() {		
+		App.setPage("index");  // set current page
+		App.init(); // init the rest of plugins and elements
+	});
+</script>
 </body>
 </html>

@@ -1,9 +1,3 @@
-jQuery(document).ready(function() {     
-    App.setPage("index");  // set current page
-    App.init(); // init the rest of plugins and elements
-});
-
-
 var App = function () {
 
     var isIE8 = false; // IE8 mode
@@ -969,7 +963,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'Metronic is a brand new Responsive Admin Dashboard Template you have always been looking for!',
                 // (string | optional) the image to display on the left
-                image: '/assets/avatar1.jpg',
+                image: './assets/img/avatar1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: true,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -994,7 +988,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'Metronic comes with a huge collection of reusable and easy customizable UI components and plugins. Buy Metronic today!',
                 // (string | optional) the image to display on the left
-                image: '/assets/avatar1.jpg',
+                image: './assets/img/avatar1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: true,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -1030,7 +1024,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'Metronic allows you to easily customize the theme colors and layout settings.',
                 // (string | optional) the image to display on the left
-                image1: '/assets/avatar1.png',
+                image1: './assets/img/avatar1.png',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: true,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -1065,7 +1059,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'You have 3 new notifications.',
                 // (string | optional) the image to display on the left
-                image1: '/assets/image1.jpg',
+                image1: './assets/img/image1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: true,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -1108,7 +1102,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'You have 2 new messages in your inbox.',
                 // (string | optional) the image to display on the left
-                image1: '/assets/avatar1.jpg',
+                image1: './assets/img/avatar1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: true,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -1151,7 +1145,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
                 // (string | optional) the image to display on the left
-                image: '/assets/avatar1.jpg',
+                image: './assets/img/avatar1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: true,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -1170,7 +1164,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
                 // (string | optional) the image to display on the left
-                image: '/assets/avatar1.jpg',
+                image: './assets/img/avatar1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: false,
                 // (int | optional) the time you want it to be alive for before fading out
@@ -1189,7 +1183,7 @@ var App = function () {
                 // (string | mandatory) the text inside the notification
                 text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
                 // (string | optional) the image to display on the left
-                image: '/assets/avatar1.jpg',
+                image: './assets/img/avatar1.jpg',
                 // (bool | optional) if you want it to fade out on its own or just sit there
                 sticky: false,
                 // (function) before the gritter notice is opened
@@ -1917,7 +1911,7 @@ var App = function () {
             var time_str = time.toString('MMM dd, yyyy HH:MM');
             var tpl = '';
             tpl += '<li class="out">';
-            tpl += '<img class="avatar" alt="" src="/assets/avatar1.jpg"/>';
+            tpl += '<img class="avatar" alt="" src="assets/img/avatar1.jpg"/>';
             tpl += '<div class="message">';
             tpl += '<span class="arrow"></span>';
             tpl += '<a href="#" class="name">Bob Nilson</a>&nbsp;';
@@ -2272,7 +2266,7 @@ var App = function () {
         blockUI: function (el, loaderOnTop) {
             lastBlockedUI = el;
             jQuery(el).block({
-                message: '<img src="/assets/loading.gif" align="absmiddle">',
+                message: '<img src="./assets/img/loading.gif" align="absmiddle">',
                 css: {
                     border: 'none',
                     padding: '2px',
